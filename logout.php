@@ -1,0 +1,9 @@
+<?php
+ session_start();
+ if(isset($_POST['logout'])){
+ session_destroy();
+ header('location:web1');}
+ else{
+    header('location:web1');
+ }
+?>
